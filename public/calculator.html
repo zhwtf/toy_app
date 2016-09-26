@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+	<title>Grade Calculator</title>
+</head>
+
+
+<body>
+<script type="text/javascript" src="calculator.js"></script>
+<div class= "main">
+<h1>Grade Calculator</h1>
+<div class="block1">
+	<h2>Activities</h2>
+	<p>Give grades to the numeric activities:</p>
+
+	<br>
+	<form id='form1'>
+	<table id='table1', style="width:70%" >
+		<tr>
+			<th>Name</th>
+			<th>Short Name</th>
+			<th>Weight</th>
+			<th>Grade</th>
+			<th>Percent</th>
+		</tr>
+
+		<tr>
+			<td>Activity 1</td>
+			<td>A1</td>
+			<td><input  id = "W1" class="weight" type="text" name="Weight" placeholder="weight" ></td>
+			<td><input id = 'A1_num' type="text" name="A1_num" onkeyup="calculator()"> / <input id = 'A1_den' type="text" name="A1_den" onkeyup="calculator()"></td>
+			<td id="percent1" class = 'percentage'></td>
+		</tr>
+
+		<tr>
+			<td>Activity 2</td>
+			<td>A2</td>
+			<td><input id = "W2" class="weight" type="text" name="Weitght" placeholder="weight"></td>
+			<td><input id = "A2_num" type="text" name="A2_num" onkeyup="calculator()"> / <input id = 'A2_den' type="text" name="A2_den" onkeyup="calculator()"></td>
+			<td id = 'percent2' class = 'percentage'></td>
+		</tr>
+
+		<tr>
+			<td>Activity 3</td>
+			<td>A3</td>
+			<td><input id = "W3" class="weight" type="text" name="Weight" placeholder="weight" ></td>
+			<td><input id = 'A3_num' type="text" name="A3_num" onkeyup="calculator()"> / <input id = 'A3_den' type="text" name="A3_den" onkeyup="calculator()"></td>
+			<td id="percent3" class = 'percentage'></td>
+		</tr>
+
+		<tr>
+			<td>Activity 4</td>
+			<td>A4</td>
+			<td><input id = "W4" class="weight" type="text" name="Weight" placeholder="weight" ></td>
+			<td><input id = 'A4_num' type="text" name="A4_num" onkeyup="calculator()"> / <input id = 'A4_den' type="text" name="A4_den" onkeyup="calculator()"></td>
+			<td id="percent4" class = 'percentage'></td>
+		</tr>
+		
+	</table>
+	<p id='result'>Result</p>
+	
+	<p id='show'></p>
+	<span>
+	
+	<button class="rightside" type="button" onclick="mean()">MEAN</button>
+	<button class="rightside" type="button" onclick="weighted()">WEIGHTED</button>	
+	</span>
+	
+	</form>
+
+	
+</div>
+</div>
+
+</body>
+</html>

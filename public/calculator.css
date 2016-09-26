@@ -1,0 +1,63 @@
+/*css for calculator
+
+*/
+
+body {
+	background-color: #a6192e;
+	padding: 60px;
+
+
+}
+
+div.main {
+	background-color: white;
+	box-shadow: ;
+	padding-top: 40px;
+	padding-bottom: 50px;
+	padding-left: 40px;
+	height: 620px;
+}
+
+div.block1{
+	background-color: #eff5f5;
+	width: 1060px;
+	height: 550px;
+	border: 2px solid #ccc;
+}
+
+th {
+	text-align: left;
+	background-color: #e6e6e5;
+	border:2px solid #ccc;
+	padding: 6px;
+	height: 20px;
+}
+
+table, tr, td{
+	height: 58px;
+	border: 2px solid #ccc;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+button.rightside{
+	float: right;
+	color: white;
+	background-color: #c00;
+	font-size: 12px;
+  	text-align: center;
+  	height: 30px;
+  	width: 70px;
+  	margin: 10px;
+}
+
+input{
+	text-align: center;
+	width: 80px;
+	height: 20px;
+	border-color: rgb(204,208,211);
+	border-collapse: collapse;
+}
+
+
+
