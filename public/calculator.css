@@ -9,6 +9,13 @@ body {
 
 }
 
+table.link, tr.link, th.link{
+	background-color: #e8edf0;
+	font-family: "Arial Black", sans-serif;
+	text-shadow: 2px 2px white;
+	table-layout: fixed;
+}
+
 div.main {
 	background-color: white;
 	box-shadow: ;
