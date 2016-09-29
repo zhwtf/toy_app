@@ -3,6 +3,16 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="calculator.css">
+
+	<table class = "link", style="width:100%">
+		<tr class="link">
+			<th class="link"><a href="http://www.sfu.ca" target="blank">SFU home</th>
+			<th class="link"><a href="http://www.lib.sfu.ca" target="blank">Library</th>
+			<th class="link"><a href="http://go.sfu.ca" target="blank">Student Center</th>
+		</tr>
+	</table>
+
+
 	<title>Grade Calculator</title>
 </head>
 
@@ -62,8 +72,10 @@
 	<p id='result'>Result</p>
 	
 	<p id='show'></p>
+	<br>
+	<p id='showgrade'></p>
 	<span>
-	
+	<button class="rightside" type="button" onclick="grade()">GRADE</button>
 	<button class="rightside" type="button" onclick="mean()">MEAN</button>
 	<button class="rightside" type="button" onclick="weighted()">WEIGHTED</button>	
 	</span>
