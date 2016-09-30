@@ -1,29 +1,92 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Users</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="calculator.css">
 
-<table>
-  <thead>
+  <table class = "link", style="width:100%">
+    <tr class="link">
+      <th class="link"><a href="http://www.sfu.ca" target="blank">SFU home</th>
+      <th class="link"><a href="http://www.lib.sfu.ca" target="blank">Library</th>
+      <th class="link"><a href="http://go.sfu.ca" target="blank">Student Center</th>
+    </tr>
+  </table>
+
+
+  <title>Grade Calculator</title>
+</head>
+
+
+<body>
+
+<script type="text/javascript" src="calculator.js"></script>
+<div class= "main">
+<h1>Grade Calculator</h1>
+<div class="block1">
+  <h2>Activities</h2>
+  <p>Give grades to the numeric activities:</p>
+
+  <br>
+  <form id='form1'>
+  <table id='table1', style="width:70%" >
     <tr>
       <th>Name</th>
-      <th>Email</th>
-      <th colspan="3"></th>
+      <th>Short Name</th>
+      <th>Weight</th>
+      <th>Grade</th>
+      <th>Percent</th>
     </tr>
-  </thead>
 
-  <tbody>
-    <% @users.each do |user| %>
-      <tr>
-        <td><%= user.name %></td>
-        <td><%= user.email %></td>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+    <tr>
+      <td>Activity 1</td>
+      <td>A1</td>
+      <td><input  id = "W1" class="weight" type="text" name="Weight" placeholder="weight" ></td>
+      <td><input id = 'A1_num' type="text" name="A1_num" onkeyup="calculator()"> / <input id = 'A1_den' type="text" name="A1_den" onkeyup="calculator()"></td>
+      <td id="percent1" class = 'percentage'></td>
+    </tr>
 
-<br>
+    <tr>
+      <td>Activity 2</td>
+      <td>A2</td>
+      <td><input id = "W2" class="weight" type="text" name="Weitght" placeholder="weight"></td>
+      <td><input id = "A2_num" type="text" name="A2_num" onkeyup="calculator()"> / <input id = 'A2_den' type="text" name="A2_den" onkeyup="calculator()"></td>
+      <td id = 'percent2' class = 'percentage'></td>
+    </tr>
 
-<%= link_to 'New User', new_user_path %>
+    <tr>
+      <td>Activity 3</td>
+      <td>A3</td>
+      <td><input id = "W3" class="weight" type="text" name="Weight" placeholder="weight" ></td>
+      <td><input id = 'A3_num' type="text" name="A3_num" onkeyup="calculator()"> / <input id = 'A3_den' type="text" name="A3_den" onkeyup="calculator()"></td>
+      <td id="percent3" class = 'percentage'></td>
+    </tr>
+
+    <tr>
+      <td>Activity 4</td>
+      <td>A4</td>
+      <td><input id = "W4" class="weight" type="text" name="Weight" placeholder="weight" ></td>
+      <td><input id = 'A4_num' type="text" name="A4_num" onkeyup="calculator()"> / <input id = 'A4_den' type="text" name="A4_den" onkeyup="calculator()"></td>
+      <td id="percent4" class = 'percentage'></td>
+    </tr>
+    
+  </table>
+  <p id='result'>Result</p>
+  
+  <p id='show'></p>
+  <br>
+  <p id='showgrade'></p>
+  
+  <span>
+  <button class="rightside" type="button" onclick="grade()">GRADE</button>
+  <button class="rightside" type="button" onclick="mean()">MEAN</button>
+  <button class="rightside" type="button" onclick="weighted()">WEIGHTED</button>  
+  </span>
+  
+  </form>
+
+  
+</div>
+</div>
+
+</body>
+</html>
