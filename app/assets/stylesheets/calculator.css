@@ -19,6 +19,25 @@ table.link, tr.link, th.link{
 	table-layout: fixed;
 }
 
+h1{
+	font-size:30px;
+	font-weight: lighter;
+	font-style: normal;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+	color: #911a22;
+	font-size:22px;
+}
+
+h3{
+	font-size: 12px;
+	font-weight: lighter;
+}
+
+
+
 div.main {
 	background-color: white;
 	border-top: 15px solid #4b4744;
@@ -48,12 +67,12 @@ th {
 	text-align: left;
 	background-color: #e6e6e5;
 	
-	padding: 6px;
+	padding: 5px;
 	height: 20px;
 }
 
 table, tr, td{
-	
+	height: 58px;
 	border: 2px solid #ccc;
 	border-collapse: collapse;
 	table-layout: fixed;
@@ -62,31 +81,35 @@ table, tr, td{
 td {
 	font-weight: lighter;
 	text-align: left;
-	padding-left: 5px;
-	padding-right: 75px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	width: 70px;
+	
+	width: 75px;
 }
 
 button.rightside{
 	float: right;
 	color: white;
-	background-color: #c00;
+	background-color: #a01c25;
 	font-size: 12px;
   	text-align: center;
-  	height: 30px;
+  	height: 25px;
   	width: 70px;
-  	margin: 10px;
+  	margin: 5px;
+  	border-radius: 2px;
 }
 
 input{
 	text-align: center;
 	width: 80px;
 	height: 20px;
-	border-color: rgb(204,208,211);
+	border-color: #ccd0d4;
 	border-collapse: collapse;
 }
 
+h4 {
+	color: #911a22;
+	font-size:20px;
+	
 
+
+}
 
