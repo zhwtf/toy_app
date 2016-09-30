@@ -109,8 +109,8 @@ function addRow(){
   $("table1 tr:last").after('<tr>'+
       '<td>Activity '+ RowCount +'</td>' +
       '<td>A'+ RowCount +'</td>' +
-      '<td><input id="W' + RowCount+'" type="text" onkeyup="weighted()"></td>' +
-      '<td><input id="A'+ RowCount +'_num"  type="text" onkeyup="calculator()" > / <br><input id="A'+ RowCount +'_den" type="text" onkeyup="calculator()" ></td>' +
+      '<td><input id="W' + RowCount+'" type="text" name="Weight" onkeyup="weighted()"></td>' +
+      '<td><input id="A'+ RowCount +'_num"  type="text" name="A'+ RowCount+ '_num" onkeyup="calculator()" > / <br><input id="A'+ RowCount +'_den" type="text" name="A'+ RowCount+ '_den" onkeyup="calculator()" ></td>' +
       '<td id="percent'+ RowCount +'" class="percentage"></td>' + '</tr>');
   
 
