@@ -115,3 +115,14 @@ function addRow(){
   
 
 }
+
+function deleteRow(){
+  if (RowCount<1) {
+    alert("You can't have zero row!");
+    return;
+  }
+  else{
+    document.getElementById('table1').deleteRow(RowCount);
+    RowCount--;
+  }
+}
