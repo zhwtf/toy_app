@@ -3,8 +3,11 @@
 */
 
 body {
-	background-color: #a6192e;
-	padding: 60px;
+	background-color: #80151c;
+	padding-left: 55px;
+	padding-right: 55px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 
 
 }
@@ -16,6 +19,25 @@ table.link, tr.link, th.link{
 	table-layout: fixed;
 }
 
+h1{
+	font-size:30px;
+	font-weight: lighter;
+	font-style: normal;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+	color: #911a22;
+	font-size:22px;
+}
+
+h3{
+	font-size: 12px;
+	font-weight: lighter;
+}
+
+
+
 div.main {
 	background-color: white;
 	border-top: 15px solid #4b4744;
@@ -25,21 +47,27 @@ div.main {
 	padding-top: 40px;
 	padding-bottom: 50px;
 	padding-left: 40px;
-	height: 680px;
+	padding-right: 300px;
+	border-right-width: 0px;
+	border-left-width: 0px;
+	border-top-width: 15px;
+	border-bottom-width: 25px;
+	border-bottom-style: outset;
 }
 
 div.block1{
 	background-color: #eff5f5;
-	width: 1060px;
-	height: 600px;
-	border: 2px solid #ccc;
+	width: auto;
+	padding: 15px;
+	padding-bottom: :55px;
+	border-radius: 6px;
 }
 
 th {
 	text-align: left;
 	background-color: #e6e6e5;
-	border:2px solid #ccc;
-	padding: 6px;
+	
+	padding: 5px;
 	height: 20px;
 }
 
@@ -50,24 +78,38 @@ table, tr, td{
 	table-layout: fixed;
 }
 
+td {
+	font-weight: lighter;
+	text-align: left;
+	
+	width: 75px;
+}
+
 button.rightside{
 	float: right;
 	color: white;
-	background-color: #c00;
+	background-color: #a01c25;
 	font-size: 12px;
   	text-align: center;
-  	height: 30px;
+  	height: 25px;
   	width: 70px;
-  	margin: 10px;
+  	margin: 5px;
+  	border-radius: 2px;
 }
 
 input{
 	text-align: center;
 	width: 80px;
 	height: 20px;
-	border-color: rgb(204,208,211);
+	border-color: #ccd0d4;
 	border-collapse: collapse;
 }
 
+p#result {
+	color: #911a22;
+	font-size:22px;
+	
 
+
+}
 
