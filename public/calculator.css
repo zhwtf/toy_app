@@ -73,7 +73,7 @@ th {
 }
 
 table.table1, tr, td{
-	width: 60px;
+	width: 200px;
 	border: 2px solid #d2d5d8;
 	border-collapse: collapse;
 	table-layout: fixed;
@@ -83,7 +83,7 @@ td {
 	font-weight: lighter;
 	text-align: left;
 	
-	width: 80px;
+	width: 100px;
 }
 
 button.rightside{
