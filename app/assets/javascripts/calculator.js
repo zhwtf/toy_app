@@ -106,10 +106,10 @@ function grade(){
 
 function addRow(){
   RowCount++;
-  $("table1 tr:last").after('<tr>'+
+  $("#table1 tr:last").after('<tr>'+
       '<td>Activity '+ RowCount +'</td>' +
       '<td>A'+ RowCount +'</td>' +
-      '<td><input id="W' + RowCount+'" type="text" name="Weight" ></td>' +
+      '<td><input id="W' + RowCount+'" class="weight" type="text" name="Weight" ></td>' +
       '<td><input id="A'+ RowCount +'_num"  type="text" name="A'+ RowCount+ '_num" onkeyup="calculator()" > / <input id="A'+ RowCount +'_den" type="text" name="A'+ RowCount+ '_den" onkeyup="calculator()" ></td>' +
       '<td id="percent'+ RowCount +'" class="percentage"></td>' + '</tr>');
   
