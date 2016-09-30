@@ -18,17 +18,20 @@ table.link, tr.link, th.link{
 
 div.main {
 	background-color: white;
-	box-shadow: ;
+	border-top: 15px solid #4b4744;
+	
+	border-bottom: 25px solid #4b4744;
+
 	padding-top: 40px;
 	padding-bottom: 50px;
 	padding-left: 40px;
-	height: 620px;
+	height: 680px;
 }
 
 div.block1{
 	background-color: #eff5f5;
 	width: 1060px;
-	height: 550px;
+	height: 600px;
 	border: 2px solid #ccc;
 }
 
